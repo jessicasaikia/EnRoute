@@ -1,0 +1,57 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CE7EDC"
+    android:textAlignment="textEnd">
+
+    <!-- Background Image -->
+
+    <!-- Foreground elements -->
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Background Image"
+        android:scaleType="center"
+        android:src="@drawable/hodi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="388dp"
+        android:layout_height="472dp"
+        android:layout_marginTop="16dp"
+        android:background="#003F51B5"
+        android:contentDescription="Logo"
+        android:src="@drawable/hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textEnRoute"
+        android:layout_width="340dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:background="#94EFEAEA"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="ENROUTE"
+        android:textAlignment="center"
+        android:textColor="#000909"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoImage"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Source input field -->
+    <EditText
+        android:id="@+id/source_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="#F49DBB"
+        android:hint="Enter source"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <!-- Destination input field -->
+
+    <!-- OSMDroid MapView -->
+    <EditText
+        android:id="@+id/destination_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/source_input"
+        android:layout_margin="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="8dp"
+        android:background="#E39CE4"
+        android:hint="Enter destination"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <!-- Button container aligned to the bottom left -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/button_container"
+        android:layout_below="@id/destination_input"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="2dp" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Railway Button -->
+        <Button
+            android:id="@+id/button_railway"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:background="#82E286"
+            android:text="Railway Stations" />
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Bus Button -->
+        <Button
+            android:id="@+id/button_bus"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:background="#F8E642"
+            android:text="Bus Stops" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Magic Tracker Button -->
+        <Button
+            android:id="@+id/button_magic_tracker"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:background="#D681E6"
+            android:text="Magic Tracker" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Get Transaction Button -->
+        <Button
+            android:id="@+id/button_transaction"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:background="#E04D4D"
+            android:text="Get Transaction" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED7C54C3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- Username EditText -->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="298dp"
+            android:layout_height="136dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#FFFFFF"
+            android:textSize="96sp"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="91dp" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Username"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <!-- Regular Login Button -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="387dp"
+            android:layout_height="48dp"
+            android:background="#90EE90"
+            android:text="Login" />
+
+        <!-- Login with Hive Keychain Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#E5FBEA4B"
+            android:text="Login with Hive Keychain" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="387dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#DC4747"
+            android:text="EXIT"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="491dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
